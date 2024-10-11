@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #97c6f4; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1455d7; /* Dark header background */
+    color: rgba(196, 9, 9, 0.899);
+    padding: 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #61dafb; /* Light blue link color */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.car-grid {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    padding: 20px;
+}
+
+.car {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1; /* Allow sections to grow and take up available space */
+    max-width: 300px; /* Limit width for each car section */
+    box-sizing: border-box;
+}
+
+.car-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.car h2 {
+    color: #282c34; /* Match the header color */
+}
+
+.car p {
+    font-size: 1em;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #21a1f1;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute; /* Positioning the link */
+    top: -40px; /* Move it out of view */
+    left: 20px; /* Positioning */
+    background-color: #61dafb; /* Background color */
+    color: white; /* Text color */
+    padding: 8px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    transition: top 0.3s; /* Smooth transition */
+}
+
+/* Show the skip link when focused */
+.skip-link:focus {
+    top: 20px; /* Move it into view */
+}
